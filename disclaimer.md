@@ -1,6 +1,6 @@
 ---
 layout: document
-title: Disclaimer
+title: Tari | Disclaimer
 permalink: /disclaimer/
 class: subpage disclaimer
 ---

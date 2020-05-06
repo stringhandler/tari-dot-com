@@ -76,6 +76,12 @@ hr {
   max-width: 80rem;
 }
 
+h5{
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: Avenir-Heavy, "Avenir-Heavy", "Myriad Pro", Arial, Verdana !important;
+}
+
 .new-section {
   padding-left: 40px;
   left: -40px;
@@ -372,6 +378,33 @@ lottie-player {
   transition: width 0.2s ease;
 }
 
+
+@media (hover: none) {
+  #viewport #menu ul li:hover:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0.2rem;
+    background: #9330ff;
+    position: absolute;
+    left: 0;
+    top: 0.9rem;
+    transition: width 0.2s ease;
+  }
+  #viewport #menu ul li.current:before,
+  #viewport #mobileMenu ul li.current:before {
+    content: "";
+    display: block;
+    width: 1.9rem;
+    height: 0.2rem;
+    background: #9330ff;
+    position: absolute;
+    left: 0;
+    top: 0.9rem;
+    transition: width 0.2s ease;
+  }
+}
+
 #viewport #menu ul li:before,
 #viewport #mobileMenu ul li:before,
 #viewport #menu ul li:before,
@@ -392,6 +425,18 @@ lottie-player {
   font-weight: bold;
   color: #000 !important;
 }
+
+#menu .current img,
+#mobileMenu .current img {
+ opacity: 1;
+}
+
+#menu ul img,
+#mobileMenu ul img {
+ opacity: .5;
+}
+
+
 #viewport #menu ul:last-of-type,
 #viewport #mobileMenu ul:last-of-type {
   margin-bottom: 0;
@@ -1480,7 +1525,7 @@ body.page- #call-to-action {
   position: relative;
 }
 
-#post h1:before,
+/*#post h1:before,
 #post h2:before,
 #post h3:before {
   max-width: 33.3%;
@@ -1491,7 +1536,7 @@ body.page- #call-to-action {
   background-color: #545454;
   margin-bottom: 20px;
 }
-
+*/
 .post blockquote {
   position: relative;
   padding-top: 20px;
@@ -1739,33 +1784,24 @@ body.page- #call-to-action {
   left: -20px;
 }
 
-/*.wallet-banner-wrapper img {
-  max-width: 200px !important;
-  width: 100% !important;
-  display: block;
-  position: relative;
-}*/
 
 /* Home page */
 #homepage-mobile-nav {
   display: none;
 }
 
+.nav-wallet-icon{
+  position: absolute;
+  max-width: 20px;
+      margin-left: 10px;
+    margin-top: 1px;
+}
+
 .tari-for-creators {
   margin-bottom: 10rem;
 }
 
-/*.animated-text{
-  position: relative;
-  height: 150px;
-}
 
-.animated-text p{
-  position: absolute;
-}
-.animated-text p:first-of-type{
-  top: 80px;
-}*/
 
 /*What is Tari */
 
@@ -1982,6 +2018,64 @@ body.page- #call-to-action {
 
   }
 
+  /* Downloads */
+
+  .home-downloads-container{
+       background: #FFFFFF;
+    box-shadow: 0 30px 60px 0 rgba(78,19,126,0.06);
+    border-radius: 10px;
+    padding: 60px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+   position: relative;
+   min-height: 360px;
+   max-height: 400px;
+   height: 100%;
+   overflow: hidden;
+
+  }
+
+  .home-downloads-container img{
+    position: absolute;
+    max-width: 150px !important;
+    top: -40px;
+    left: -10px;
+    transform: rotate(-75deg);
+  }
+
+  .home-downloads-copy{
+    margin-left: 20px;
+  }
+
+  .downloads-graphic{
+    position: absolute;
+    right: 0;
+    max-width: 250px;
+    top: 40px;
+  }
+
+  .home-downloads-container h2{
+    margin-top: 0 !important;
+    z-index: 100;
+    position: relative;
+    margin-bottom: 20px;
+  }
+
+  @media only screen and (max-width: 767px){
+    .downloads-graphic{
+      display: none;
+    }
+      .home-downloads-copy{
+    margin-left: 0px;
+  }
+
+    .home-downloads-container{
+      text-align: center;
+      padding: 40px;
+      margin-top: 50px;
+    }
+  }
+
 
 
 /* Legal Docs */
@@ -1993,9 +2087,11 @@ body.page- #call-to-action {
   margin-bottom: 10rem;
 }
 
-/* Media Queries */
 
 /* Media Queries */
+
+
+
 
 /* rwd */
 @media only screen and (max-width: 2200px) {
@@ -2194,6 +2290,31 @@ body.page- #call-to-action {
     margin-left: 0px;
   }*/
 }
+
+
+
+/* Updates */
+
+.updates-area .post-date{
+    font-style: unset;
+    display: inline;
+    font-size: 21px !important;
+    margin-top: 20px;
+    position: absolute;
+    top: -42px;
+    color: white !important;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.update-page-title{
+  color: white;
+  position: absolute;
+  bottom: 0;
+  left: 40px;
+}
+
+
 
 /* 404 */
 
