@@ -1,0 +1,27 @@
+---
+layout: default
+title: Explore the Protocol
+permalink: /explore-the-protocol/
+class: subpage blog
+---
+
+<!-- Posts Start -->
+<section class="main" data-size="{{ site.lessons.size }}">
+  {% include newsletter-subscribe.html %}
+  <div class="container content">
+    <h1 style="margin-bottom: 80px;" id="blog">Explore the Protocol</h1>
+
+    <div
+      style="max-width: 80rem;"
+      class="row js-stagger-delay js-add-class-in-view"
+      data-stagger-selector=".js-stagger-delay-post-panel"
+      data-stagger-property="animation"
+      data-stagger-interval=".1408"
+      data-stagger-direction="forwards"
+      data-in-view-count="1"
+      data-in-view-offset="75%"
+    >
+      {% for post in site.lessons  %} {% include lesson-area.html %} {% endfor %}
+    </div>
+  </div>
+</section>

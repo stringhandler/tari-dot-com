@@ -1,0 +1,122 @@
+<div id="gh-issues-container" class="tab-container">
+  <div class="header-container">
+    <div
+      class="tab-header active-header"
+      id="tab-one-h"
+      onclick="tabSelected('#tab-one-h', '#tab-one')"
+    >
+      <div class="tab-title-holder">
+        <img
+          class="tab-header-img"
+          src="{{ site.baseurl }}/assets/img/tari_issues.png"
+          alt=""
+        />
+        <h6 class="tab-title">Tari Protocol Issues</h6>
+      </div>
+      <div class="issue-count" id="protocol-count">
+        <div class="issue-count-text"></div>
+      </div>
+    </div>
+    <div
+      class="tab-header"
+      id="tab-two-h"
+      onclick="tabSelected('#tab-two-h', '#tab-two')"
+    >
+      <div class="tab-title-holder">
+        <img
+          class="tab-header-img"
+          src="{{ site.baseurl }}/assets/img/ios_issues.png"
+          alt=""
+        />
+        <h6 class="tab-title">iOS Issues</h6>
+      </div>
+      <div class="issue-count" id="wallet-count">
+        <div class="issue-count-text"></div>
+      </div>
+    </div>
+  </div>
+  <div class="content-container">
+    <div class="tab-content active-tab" id="tab-one">
+      <div class="tab-nav">
+        <div
+          class="tab-nav-item active"
+          id="protocol-documentation-count"
+          onclick="categorySelected('#protocol-documentation-count')"
+        >
+          Documentation
+          <span class="sub-count"> </span>
+        </div>
+        <div
+          class="tab-nav-item"
+          id="protocol-tests-count"
+          onclick="categorySelected('#protocol-tests-count')"
+        >
+          Tests
+          <span class="sub-count"> </span>
+        </div>
+        <div
+          class="tab-nav-item"
+          id="protocol-other-count"
+          onclick="categorySelected('#protocol-other-count')"
+        >
+          Core
+          <span class="sub-count"> </span>
+        </div>
+      </div>
+      <div class="issue-holder active" id="protocol-documentation"></div>
+      <div class="issue-holder" id="protocol-tests"></div>
+      <div class="issue-holder" id="protocol-other"></div>
+
+      <div class="view-all-holder">
+        <a
+          class="view-all-text"
+          id="protocol-view-all"
+          href="{{ site.protocol_github_issues }}"
+          target="_blank"
+        ></a>
+      </div>
+    </div>
+
+    <div class="tab-content" id="tab-two">
+      <div class="tab-nav">
+        <div
+          class="tab-nav-item active"
+          id="wallet-documentation-count"
+          onclick="categorySelected('#wallet-documentation-count')"
+        >
+          Documentation
+          <span class="sub-count"> </span>
+        </div>
+        <div
+          class="tab-nav-item"
+          id="wallet-tests-count"
+          onclick="categorySelected('#wallet-tests-count')"
+        >
+          Tests
+          <span class="sub-count"> </span>
+        </div>
+        <div
+          class="tab-nav-item"
+          id="wallet-other-count"
+          onclick="categorySelected('#wallet-other-count')"
+        >
+          Core
+          <span class="sub-count"> </span>
+        </div>
+      </div>
+
+      <div class="issue-holder active" id="wallet-documentation"></div>
+      <div class="issue-holder" id="wallet-tests"></div>
+      <div class="issue-holder" id="wallet-other"></div>
+
+      <div class="view-all-holder" id="viewAllIosHolder">
+        <a
+          class="view-all-text"
+          id="wallet-view-all"
+          href="{{ site.ios_github_issues }}"
+          target="_blank"
+        ></a>
+      </div>
+    </div>
+  </div>
+</div>

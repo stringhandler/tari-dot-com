@@ -1,0 +1,55 @@
+- title: What is Tari?
+  id: faq-what-is-tari
+  text: Tari is a new open source, digital assets focused blockchain protocol that is being architected as a merge-mined sidechain with Monero. We chose to focus specifically on digital assets – things like tickets, loyalty points, in-game items, and crypto-native assets like CryptoKitties – because we see a huge opportunity to revolutionize the way these assets are owned, managed and transferred.
+- title: What is a Digital Asset?
+  id: faq-what-is-digital-asset
+  text: A digital asset is one that consumers can purchase or earn the right to use, but which exists entirely in digital form. Digital assets include event tickets, in-game items, loyalty points, and cryptonative assets.
+- title: How will this help the businesses issuing digital assets?
+  id: faq-businesses-issuing-assets
+  text: Creators of digital assets will be able to issue them as programmable non-fungible tokens on the Tari blockchain and trust that their rules will be enforced. Rules may be economic in nature (e.g. X% fee every time a given asset is transferred), time-based (e.g. A given asset can only be transferred X days after receipt) or something else entirely. Our goal is to architect Tari in a manner that gives asset issuers meaningful flexibility with the rulesets they create for their digital assets.
+- title: Who are the co-founders of Tari?
+  id: faq-co-founders
+  text: The co-founders of Tari are Naveen Jain, Riccardo “fluffypony” Spagni, and Dan Teree.
+- title: When is the Tari token sale?
+  id: faq-tari-token-sale
+  text: Tari is not running any kind of public token sale. We’re not currently soliciting or accepting investment, and any opportunities to buy Tari tokens you may see online are scams.
+- title: Can I mine Tari?
+  id: faq-can-i-mine-tari
+  text: After the launch of the Tari genesis block, you will be able to opt into mining Tari by mining Monero.
+- title: Why merge mine Monero?
+  id: faq-merge-mine-monero
+  text: We chose Monero because we care deeply about decentralization, are passionate believers in the ideology that drives the Monero community, and think Monero is a great fit for a foundational security layer. We hope other projects will consider leveraging Monero in this manner.
+- title: What’s the Tari roadmap?
+  id: faq-tari-roadmap
+  text: Open-source projects are typically built by many participants, from the ground up, with only the end-goal in mind. As stewards of the project our role isn’t to force a roadmap on those building the Tari protocol. Our goal is to help guide and direct, where suitable, to help everyone accomplish the end goal. Tari is a destination, and we welcome anyone who believes in the Tari mission to contribute.
+- title: What’s the origin of the name “Tari”?
+  id: faq-origin-of-tari-name
+  text: Tari literally means “newly minted money” in Arabic. It also refers to a small gold coin used in the Mediterranean from the 10th through the 14th centuries. Since it was lightweight and convenient to use compared with other coins of the time, it became a popular medium of exchange for everyday commerce. Similarly, we envision the new Tari protocol being commonly used to create and distribute digital assets of all types.
+- title: What can I do to help with Tari’s development effort?
+  id: faq-help-with-tari-development
+  text: The Tari organisation exists to steward the development of the Tari protocol, and is allowed to do so by the nascent Tari community. Tari Labs employs some full time Tari contributors, but the best way for us to build a powerful, robust protocol is to have many contributors working on the Tari project. Thus we invite you to participate by checking open issues on the <a href="https://github.com/tari-project/tari" target"_blank">Tari GitHub</a>, and participate in the ongoing development discussion on Freenode in &#x23;tari-dev or &#x23;tari-research for research-oriented discussions.
+- title: What sets Tari apart from decentralized application protocol projects? Why not use an existing protocol?
+  id: faq-what-sets-tari-apart
+  text: There are many blockchain protocols that currently, or plan to support some form of digital assets. However, many of these protocols also support the development of decentralized applications. Due to the many trade-offs involved, we think it’s harder to build a scalable, decentralized applications focused protocol, than a protocol that focuses only on digital assets. We also think that protocols that will ultimately change how our world works will combine great technology and a great go-to-market strategy.
+- title: How will this help consumers?
+  id: faq-how-will-this-help-consumers
+  text: Consumers will be able to use applications built on top of the Tari blockchain to more easily transfer their digital assets while respecting the rules set by issuers. Ultimately, our intended result is a frictionless, lower cost digital asset ecosystem that benefits consumers and digital asset issuers.
+- title: What are specific use cases for the Tari protocol?
+  id: faq-specific-use-cases
+  text: The Tari protocol is being built for a specific use&#x3a; to facilitate the issuance, management and transfer of digital assets. Digital assets include&#x3a; tickets, loyalty points, in-game items, and crypto-native assets like CryptoKitties.
+- title: Who are the investors behind Tari?
+  id: faq-who-are-investors
+  text: The Tari Labs organization is very honored to be supported by Redpoint, Trinity Ventures, Canaan Partners, Blockchain Capital, Pantera, Slow Ventures, Aspect Ventures, Vy Capital, Bee Partners, Sora Ventures, Macro Ventures, Draft Ventures, Base Ventures, and more. Thank you to everyone who is supporting us on this journey.
+- title: How are you going to make Tari scalable?
+  id: faq-tari-scalable
+  text: We plan on making Tari scalable by utilizing technologies like payment channels and transaction cut-through.
+- title: What is merge mining?
+  id: faq-what-is-merge-mining
+  text: Merge mining allows miners in one cryptocurrency to also mine another cryptocurrency with minimal extra overhead or cost to themselves. If you think of mining as drawing lottery balls out of an enormous bucket, you win Monero if you draw a number greater than 1,000, say. If you draw 100, you win nothing. By opting into merge mining Tari, you get an additional free ticket to win Tari if that number is greater than, say 90. If you draw 1,001 you win both Monero and Tari. If you draw 100, you don’t win Monero, but you still get your Tari.
+- title: What makes Tari different from Monero?
+  id: faq-tari-and-monero
+  text: Monero and Tari share the philosophy of doing one job, and doing it well. Monero is a privacy focused cryptocurrency. Tari is a generalized digital assets focused protocol. The two are complementary and not in competition.
+- title: What’s the story behind the Tari logo?
+  id: faq-tari-logo
+  text: The Tari logo was designed by Office, an iconic San Francisco branding firm. It features two main themes&#x3a; 1) a “T” for “Tari” centered within a gem, representing the type of digital gems or treasures which will be issued on the Tari blockchain and 2) the shape of a three-dimensional block with a chain wrapped around it (you may miss this one at first glance!), referencing the core technology upon which Tari is built.
+

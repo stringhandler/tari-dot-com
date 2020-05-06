@@ -1,0 +1,47 @@
+---
+layout: default
+title: { { page.title | append: "| Tari" } }
+---
+
+<section class="main blog-post">
+  {% include newsletter-subscribe.html %}
+  <div class="post content" style="max-width: 90rem;">
+    <div
+      class="post-img"
+      style="background-image:url({% if page.thumbnail %}{{ site.baseurl }}/assets/lessons/img/{{ page.thumbnail }}{% else %}{{ site.baseurl }}/assets/lessons/img/placeholder-thumbnail.jpg{% endif %})"
+    >
+      <img src="{{ site.baseurl }}/assets/img/posts/placeholder-spacer.gif" />
+    </div>
+
+    <div class="post-head">
+      <div>
+        <p class="meta">
+          By {{ page.author }} • {{ page.date | date: '%B %d, %Y' }}
+        </p>
+        <h1 style="margin-bottom: 5rem;">{{ page.title }}</h1>
+        {% if page.subtitle %}
+        <div class="lead">
+          <h2 style="margin-bottom: 2rem; margin-top: 0px;">
+            {{ page.subtitle }}
+          </h2>
+        </div>
+        {% endif %}
+        <!-- {% if page.author %}<strong class="post-author">{{ page.author }}</strong>{% endif %} -->
+      </div>
+    </div>
+
+    <section id="post" style="position: relative; z-index: 1000;">
+      {{ content }}
+    </section>
+
+    <div class="block">
+      <a
+        class="btn btn-lg"
+        style="margin-bottom: 80px;"
+        href="{{ site.baseurl }}/explore-the-protocol"
+        >Back to All Lessons</a
+      >
+    </div>
+  </div>
+  <script src="{{ site.baseurl }}/assets/js/formSubmit.js"></script>
+</section>

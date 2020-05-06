@@ -1,0 +1,13 @@
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
+.DS_Store
+.idea
+
+deploy.yaml
+.env
+
+# Ignore binaries folder - the files are too big
+_binaries/*

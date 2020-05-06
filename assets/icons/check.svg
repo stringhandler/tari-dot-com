@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="20px" viewBox="0 0 27 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Icon/check</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M23.2625631,0.762563133 C23.9459806,0.0791456224 25.0540194,0.0791456224 25.7374369,0.762563133 C26.4208544,1.44598064 26.4208544,2.55401936 25.7374369,3.23743687 L9.98743687,18.9874369 C9.30401936,19.6708544 8.19598064,19.6708544 7.51256313,18.9874369 L0.512563133,11.9874369 C-0.170854378,11.3040194 -0.170854378,10.1959806 0.512563133,9.51256313 C1.19598064,8.82914562 2.30401936,8.82914562 2.98743687,9.51256313 L8.75,15.2751263 L23.2625631,0.762563133 Z" id="path-1"></path>
+    </defs>
+    <g id="Final-Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Success-Message" transform="translate(-878.000000, -99.000000)">
+            <g id="Icon/check" transform="translate(878.500000, 99.500000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="↳🎨-Color" fill="#FFFFFF" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

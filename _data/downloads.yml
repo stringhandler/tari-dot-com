@@ -1,0 +1,61 @@
+- type: Ubuntu
+  elementID: ubuntu
+  elementTabButtonID: ubuntu-btn
+  title: Tari Base Node for Ubuntu
+  subtitle: Download the binary, click through to install. Then you'll be
+    automatically connected to the Tari blockchain.
+  download: binaries/tari_base_node-ubuntu-0.2.1-23677a7.zip
+  checksum: 5e28b3da43c40c19282eac086736cdd11392b336c83d6c70ac9d882bc6533daa
+  version: Ubuntu 18.04 and higher
+  source: https://github.com/tari-project/tari
+  background-image: /assets/img/downloads/ubuntu.mp4
+  video-poster: /assets/img/downloads/ubuntu.png
+  logo: /img/downloads/ubuntu-logo.svg
+  logo-active: /img/downloads/ubuntu-logo-active.svg
+  defaultActive: active
+  ctaText: Download for Ubuntu
+  filter_spec: ubuntu
+- type: Mac
+  elementID: mac
+  elementTabButtonID: mac-btn
+  title: Tari Base Node for Mac
+  subtitle: Download the binary, click through to install. Then you'll be
+    automatically connected to the Tari blockchain.
+  download: binaries/tari_base_node-osx-10.15-0.2.1-23677a7.pkg
+  checksum: a3e6456e74bb418a31a6a061815196f79248ba66bfbea1e91787177c4f7e5c6f
+  version: MacOS 10.15.0 (Catalina) and higher
+  source: https://github.com/tari-project/tari
+  background-image: /assets/img/downloads/mac.mp4
+  video-poster: /assets/img/downloads/Mac.png
+  logo: /img/downloads/apple-logo.svg
+  logo-active: /img/downloads/apple-logo-active.svg
+  ctaText: Download for Mac
+  filter_spec: osx-10.15
+- type: Windows
+  elementID: windows
+  elementTabButtonID: windows-btn
+  title: Tari Base Node for Windows
+  subtitle: Download the binary, click through to install. Then you'll be
+    automatically connected to the Tari blockchain.
+  download: binaries/tari_base_node-windows-0.2.1-ecfe782.exe
+  checksum: 9fb4d1836028268325a06f50c3a8dde85523c710450371b2ccbab342c30db8f8
+  version: Windows 10 and higher
+  source: https://github.com/tari-project/tari
+  background-image: /assets/img/downloads/windows.mp4
+  video-poster: /assets/img/downloads/windows.png
+  logo: /img/downloads/windows-logo.svg
+  logo-active: /img/downloads/windows-logo-active.svg
+  ctaText: Download for Windows
+  filter_spec: windows
+- type: Libraries
+  elementID: support
+  elementTabButtonID: support-btn
+  title: Tari Support Libraries
+  subtitle: Additional miscellaneous binaries and files to enable developers.
+  download: null
+  background-image: /assets/img/downloads/support.mp4
+  video-poster: /assets/img/downloads/support.png
+  logo: /img/downloads/support-logo.svg
+  logo-active: /img/downloads/support-logo-active.svg
+  ctaText: Support libraries
+  filter_spec: libwallet

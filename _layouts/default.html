@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+
+  {% include head.html %}
+
+</head>
+<body class="{{ page.class }}">
+  <div id="viewport" class="animsition">
+    {% include side-navigation.html %}
+
+    {{ content }}
+  </div>
+
+  {% include footer.html %}
+
+
+{% include copyright.html %}
+<script src="{{ site.baseurl }}/assets/js/jquery.smoothscroll.js"></script>
+<script src="{{ site.baseurl }}/assets/js/downloads.js"></script>
+<script src="{{ site.baseurl }}/assets/js/githubIssues.js"></script>
+<script src="{{ site.baseurl }}/assets/js/functions.js"></script>
+</body>
+</html>

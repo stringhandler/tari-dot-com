@@ -1,0 +1,251 @@
+.download-content {
+  display: none;
+}
+.download-content.active {
+  display: flex;
+  flex-direction: column;
+}
+.dl-card {
+  background: #ffffff;
+  box-shadow: 0 10px 15px 0 rgba(236, 236, 236, 0.5);
+  border-radius: 10px;
+  max-width: 80rem;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 70px;
+}
+
+.dl-card .btn{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.tab-button-holder {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  max-width: 80rem;
+  margin: 45px 0 45px 0;
+  flex-wrap: wrap;
+}
+.tab-button {
+  font-family: Avenir-Heavy;
+  font-size: 18px;
+  color: #bcbcbb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 20rem;
+  padding-bottom: 17px;
+}
+.os-logo-img {
+  display: flex;
+}
+.os-logo-img-active {
+  display: none;
+}
+.tab-button.active {
+  color: #9330ff;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #9330ff;
+}
+
+.tab-button:hover {
+  color: #9330ff;
+  cursor: pointer;
+}
+.tab-button.active .os-logo-img-active,
+.tab-button:hover .os-logo-img-active {
+  display: flex;
+}
+.tab-button.active .os-logo-img,
+.tab-button:hover .os-logo-img {
+  display: none;
+}
+
+.tab-button:hover .tab-button span path {
+  fill: #9330ff;
+}
+
+.tab-button img {
+  margin-right: 15px;
+}
+
+.dl-card .dl-info-holder > h2.dl-title {
+  margin: 0 0 20px 0 !important;
+}
+
+.dl-card .dl-info-holder > p.dl-subtitle {
+  margin: 0 !important;
+}
+
+.dl-info-holder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  min-height: 370px;
+}
+
+.dl-machine-img {
+  position: absolute;
+  right: 0;
+  max-height: 370px;
+}
+
+.version {
+  font-family: Avenir-Medium;
+  font-size: 12px;
+  color: #a0a0a0;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 10px 0 0 0;
+  word-break: break-all;
+}
+
+.source {
+  font-family: Avenir-Heavy;
+  font-size: 16px;
+  color: #9330ff;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+
+.binaries-container {
+  max-width: 80rem;
+}
+
+.binaries-container > .bin-headers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 30px 15px;
+  border-bottom: 1px solid #ececec;
+}
+div.bin-header {
+  display: flex;
+  width: 33%;
+}
+
+.header-text {
+  font-family: Avenir-Heavy;
+  font-size: 24px;
+  color: #000000;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+.bin-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 15px 15px;
+  background: #f7f7f7;
+}
+
+.bin-row.alt-colour {
+  background: #fafafa;
+}
+
+div.bin-row-item {
+  display: flex;
+  font-family: Avenir-Medium;
+  font-size: 16px;
+  color: #9330ff;
+  letter-spacing: 0;
+  line-height: 35px;
+}
+
+div.bin-row-item.bin-left {
+  width: 66%;
+}
+
+div.bin-row-item.bin-right {
+  color: #626262;
+  width: 33%;
+}
+
+div#support.download-content > .dl-card div.dl-info-holder {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 900px) {
+  .dl-machine-img {
+    max-height: 220px;
+    margin-top: 80px;
+  }
+
+  .tab-button {
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    width: 28vw;
+  }
+}
+
+@media only screen and (max-width: 899px) and (min-width: 769px) {
+  .dl-machine-img {
+    max-height: 220px;
+    margin-top: 80px;
+  }
+
+  .tab-button {
+    margin-bottom: 15px;
+    justify-content: flex-start;
+    width: 38vw;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #downloads {
+    padding-top: 6.5rem;
+  }
+  .dl-machine-img {
+    display: none;
+  }
+  .dl-card {
+    padding: 35px;
+  }
+
+  .tab-button-holder {
+    justify-content: flex-start;
+  }
+
+  .tab-button {
+    width: 43vw;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    margin-bottom: 20px;
+  }
+
+  div#support-btn.tab-button {
+    align-items: flex-start;
+  }
+
+  .bin-row,
+  .bin-headers {
+    padding: 8px;
+  }
+
+  .header-text {
+    font-size: 18px;
+    line-height: 14px;
+  }
+  div.bin-row-item.bin-right,
+  div.bin-row-item.bin-left {
+    font-size: 14px;
+    line-height: 22px;
+    width: 47%;
+  }
+
+  div.bin-header {
+    width: 47%;
+  }
+}

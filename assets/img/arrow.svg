@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="19px" height="11px" viewBox="0 0 19 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>↳🎨 Color</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M9.42857143,3.79376417 L2.68259637,10.5397392 C2.06891534,11.1534203 1.0739418,11.1534203 0.460260772,10.5397392 C-0.153420257,9.9260582 -0.153420257,8.93108466 0.460260772,8.31740363 L8.31740363,0.460260772 C8.93108466,-0.153420257 9.9260582,-0.153420257 10.5397392,0.460260772 L18.3968821,8.31740363 C19.0105631,8.93108466 19.0105631,9.9260582 18.3968821,10.5397392 C17.7832011,11.1534203 16.7882275,11.1534203 16.1745465,10.5397392 L9.42857143,3.79376417 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tari-Concept-LP" transform="translate(-1381.000000, -2932.000000)">
+            <g id="Group-4" transform="translate(480.000000, 2893.000000)">
+                <g id="Icon/Arrows/up-arrow" transform="translate(901.000000, 39.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="↳🎨-Color" fill="#5D36AF" transform="translate(9.428571, 5.500000) scale(1, -1) translate(-9.428571, -5.500000) " xlink:href="#path-1"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
