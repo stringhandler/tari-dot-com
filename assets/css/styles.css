@@ -1254,6 +1254,17 @@ input:-moz-placeholder {
   margin-bottom: 5rem;
 }
 
+
+.blog .new-section{
+  margin-top: unset;
+ /* margin-bottom: 120px;*/
+}
+
+.blog-area{
+  margin-top: 120px;
+}
+
+
 /*.post-area {
   padding: 0 20px 60px 20px;
 }*/
@@ -1390,13 +1401,16 @@ input:-moz-placeholder {
   margin-bottom: 20px;
 }
 
-.subpage #viewport section.main .post-area h3,
-.subpage #viewport section.main .post-area p {
+.subpage #viewport section.main .post-area h3{
   margin: 0;
 }
 
 .subpage #viewport section.main .post-area p {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.subpage #viewport section.main .post-area .btn2{
+  margin-top: 15px;
 }
 
 /*--
@@ -1421,6 +1435,7 @@ body.page- #call-to-action {
   max-width: 80rem;
   padding-top: 50px;
 }
+
 
 .blog-section .row,
 .learn-section .row {
@@ -2033,6 +2048,23 @@ body.page- #call-to-action {
    height: 100%;
    overflow: hidden;
 
+  }
+
+  .updates-banner{
+
+    margin-top: 40px;
+    max-width: 80rem;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    position: relative;
+
+    align-self: center;
+    justify-content: space-between;
+  }
+
+  .updates-banner p{
+    margin: 0 !important;
   }
 
   .home-downloads-container img{

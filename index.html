@@ -329,16 +329,13 @@ class: subpage home
                 </div>
               </div>
 
-
           <!-- Store Banner END  -->
-
-
 
         </div>
       </div>
     </div>
 
-    <!-- Lessons  -->
+    <!-- Explore  -->
 
     <div id="explore-the-protocol" class="explore-the-protocol anchor">
       <div class="explore-the-protocol">
@@ -354,13 +351,13 @@ class: subpage home
 
         <h2>Updates</h2>
 
-        <p class="pt-3">NEED CONTENT</p>
+        <p class="pt-3">The latest recaps on various technical discussions on the Tari protocol. From designing the communication layer to exploring merge mining.</p>
         <a class="" style="font-size: 2rem;" href="{{ site.baseurl }}/updates">View all Updates</a>
 
         <div class="learn-section" style="padding-top: 50px;">
           <div class="row js-stagger-delay js-add-class-in-view" data-stagger-selector=".js-stagger-delay-post-panel" data-stagger-property="animation" data-stagger-interval=".1408" data-stagger-direction="forwards" data-in-view-count="1" data-in-view-offset="75%">
-            {% assign updates = site.updates %}
-            {% for post in updates limit: 2 %}
+            {% assign updates = site.updates | sort:"date" | reverse %}
+            {% for post in updates limit:2 %}
             {% include updates-area.html %}
             {% endfor %}
           </div>
@@ -451,12 +448,69 @@ class: subpage home
         <h3>Get Involved</h3>
         <p>Tari is an ecosystem of projects. Each project varies in complexity and sophistication. Some projects are easy to get started contributing to, and others have a meaningful learning curve. The common thread that runs through all Tari projects is that we (the Tari community) are united in making Tari useful, conducting ourselves in a  low ego manner, and warmly welcoming everyone regardless of skill level or background. Projects that need your help and support:</p>
 
-        <ul>
-          <li><a href="https://aurora.tari.com" target="_blank">Tari Aurora</a> - Aurora is a native reference design wallet application for iOS and Android. The core of Aurora is lib_tariwallet, a highly efficient and extensible library written in Rust with C-bindings for JNI and Swift codebases. Contributing to Aurora is a great way to learn how Rust functions in mobile environments, and to how end users will interact with the Tari digital currency, and network in the future. Contribute to Tari Aurora wallet application for <a href="https://github.com/tari-project/wallet-ios" target="_blank">iOS</a> and <a href="https://github.com/tari-project/wallet-android" target="_blank">Android</a>.</li>
-          <li><a href="https://github.com/tari-project/tari" target="_blank">The Tari Base Layer</a> - The main Tari repository comprises all the main crates that make up the backbone of the Tari base Layer. It's all written in Rust and  includes: the base node application, the blockchain consensus code and database, the Tari communications stack, and Tari wallet.</li>
-          <li><a href="https://tlu.tarilabs.com/" target="_blank">Tari Labs University</a> - The goal for Tari Labs University (TLU) is to create the best free, open source educational resource for the many technologies that comprise blockchain systems. If you are interested in researching cryptography such as bulletproofs to scriptless scripts and blockchain technologies such as layer-2 scaling to merge mining, contributing to TLU is your calling.</li>
-          <li><a href="{{ site.baseurl }}/explore-the-protocol" target="_blank">Tari Rust Tutorials</a> - One of the newest editions to the Tari ecosystem, the Rust tutorials, enables developers to experiment with Tari Rust libraries in a browser environment without downloading anything. Try your hand at creating something new with the Tari Rust libraries and sharpen your Rust skills.</li>
-        </ul>
+
+        <div class="row graphic-boxes-wrapper">
+
+
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="graphic-box">
+              <div class="graphic-box-content">
+                <img src="{{ site.baseurl }}/assets/img/phones.png" alt="" />
+                <h4>Tari Aurora</h4>
+                <p>
+                  Aurora is a native reference design wallet application for iOS and Android. The core of Aurora is lib_tariwallet, a highly efficient and extensible library written in Rust with C-bindings for JNI and Swift codebases. Contributing to Aurora is a great way to learn how Rust functions in mobile environments, and to how end users will interact with the Tari digital currency, and network in the future. Contribute to Tari Aurora wallet application for <a href="https://github.com/tari-project/wallet-ios" target="_blank">iOS</a> and <a href="https://github.com/tari-project/wallet-android" target="_blank">Android</a>.
+                </p>
+
+              </div>
+              <a class="btn2" target="_blank" style="margin-top: 20px; width: 100%;" href="https://aurora.tari.com">View Tari Aurora</a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="graphic-box">
+              <div class="graphic-box-content">
+                <img src="{{ site.baseurl }}/assets/img/tari_u.png" alt="" />
+                <h4>Tari Labs University</h4>
+                <p>
+                 The goal for Tari Labs University (TLU) is to create the best free, open source educational resource for the many technologies that comprise blockchain systems. If you are interested in researching cryptography such as bulletproofs to scriptless scripts and blockchain technologies such as layer-2 scaling to merge mining, contributing to TLU is your calling.
+                </p>
+
+              </div>
+              <a class="btn2" target="_blank" style="margin-top: 20px; width: 100%;" href="https://tlu.tarilabs.com/">Tari Labs University</a>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="graphic-box">
+              <div class="graphic-box-content">
+                <img src="{{ site.baseurl }}/assets/img/tutorials.png" alt="" />
+                <h4>Rust Tutorials</h4>
+                <p>One of the newest editions to the Tari ecosystem, the Rust tutorials, enables developers to experiment with Tari Rust libraries in a browser environment without downloading anything. Try your hand at creating something new with the Tari Rust libraries and sharpen your Rust skills.</p>
+              </div>
+              <a class="btn2" target="_blank" style="margin-top: 20px; width: 100%;" href="{{ site.baseurl }}/explore-the-protocol">Explore Rust Tutorials</a>
+            </div>
+          </div>
+
+
+
+          <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="graphic-box">
+              <div class="graphic-box-content">
+                <img src="{{ site.baseurl }}/assets/img/base-node.png" alt="" />
+                <h4>Tari Base Layer</h4>
+                <p>
+                  The main Tari repository comprises all the main crates that make up the backbone of the Tari base Layer. It's all written in Rust and  includes: the base node application, the blockchain consensus code and database, the Tari communications stack, and Tari wallet.
+                </p>
+
+              </div>
+              <a class="btn2" style="margin-top: 20px; width: 100%;" href="https://github.com/tari-project/tari">Get Started</a>
+            </div>
+          </div>
+        </div>
+
 
         <h3>Bug Hunting</h3>
         <p>Found a bug? If it's a noncritical bug, please report it as a GitHub issue <a href="https://github.com/tari-project/tari/issues/new?assignees=&labels=bug-report&template=bug_report.md&title=%5BThanks%20for%20making%20Tari%20better%5D" target="_blank">here</a>. Thank you for helping to make the Tari project more robust, and reliable.</p>

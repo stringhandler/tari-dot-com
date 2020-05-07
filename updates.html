@@ -8,8 +8,11 @@ class: subpage blog
 <!-- Posts Start -->
 <section class="main" data-size="{{ site.lessons.size }}">
   {% include newsletter-subscribe.html %}
-  <div class="container content">
-    <h1 style="margin-bottom: 80px;" id="blog">Updates</h1>
+  <div class="content">
+    <div class="new-section">
+    <h1 id="blog">Updates</h1>
+    <p>The latest recaps on various technical discussions on the Tari protocol. From designing the communication layer to exploring merge mining.</p>
+  </div>
 
     <div
       style="max-width: 80rem;"
@@ -21,7 +24,8 @@ class: subpage blog
       data-in-view-count="1"
       data-in-view-offset="75%"
     >
-      {% for post in site.updates  %} {% include updates-area.html %} {% endfor %}
+      {% assign updates = site.updates | sort:"date" | reverse %}
+      {% for post in updates %} {% include updates-area.html %} {% endfor %}
     </div>
   </div>
 </section>
