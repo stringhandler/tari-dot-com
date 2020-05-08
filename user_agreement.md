@@ -1,6 +1,6 @@
 ---
 layout: document
-title: Tari User Agreement
+title: Tari | User Agreement
 permalink: /user_agreement/
 class: subpage user_agreement
 ---

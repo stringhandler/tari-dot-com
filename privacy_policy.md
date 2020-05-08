@@ -1,6 +1,6 @@
 ---
 layout: document
-title: Tari Privacy Policy
+title: Tari | Privacy Policy
 permalink: /privacy_policy/
 class: subpage privacy_policy
 ---
