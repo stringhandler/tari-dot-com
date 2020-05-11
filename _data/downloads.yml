@@ -4,8 +4,8 @@
   title: Tari Base Node for Ubuntu
   subtitle: Download the binary, click through to install. Then you'll be
     automatically connected to the Tari blockchain.
-  download: binaries/tari_base_node-ubuntu-0.2.1-23677a7.zip
-  checksum: 5e28b3da43c40c19282eac086736cdd11392b336c83d6c70ac9d882bc6533daa
+  download: binaries/tari_base_node-ubuntu-0.2.3.zip
+  checksum: ce4ed1b1f8916e66039adaeb8fe63f4f0d0d76a4fc0af79ee73457fb422ea8ff
   version: Ubuntu 18.04 and higher
   source: https://github.com/tari-project/tari
   background-image: /assets/img/downloads/ubuntu.mp4
