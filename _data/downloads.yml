@@ -39,8 +39,8 @@
   title: Tari Base Node for Windows
   subtitle: Download the binary, click through to install. Then you'll be
     automatically connected to the Tari blockchain.
-  download: binaries/tari_base_node-windows-0.2.1-ecfe782.exe
-  checksum: 9fb4d1836028268325a06f50c3a8dde85523c710450371b2ccbab342c30db8f8
+  download: binaries/tari_base_node-windows-0.2.4.exe
+  checksum: 38ed3fbd704fc274bd8bc69037b5e681a8d83ddaa6925e14c5c4cf025bf49f12
   version: Windows 10 and higher
   source: https://github.com/tari-project/tari
   background-image: /assets/img/downloads/windows.mp4
