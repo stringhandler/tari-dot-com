@@ -10,7 +10,7 @@
   source: https://github.com/tari-project/tari
   background-image: /assets/img/downloads/ubuntu.mp4
   video-poster: /assets/img/downloads/ubuntu.png
-  tutorial-video: null
+  tutorial-video: /updates/2020-05-14-update-12.html
   logo: /img/downloads/ubuntu-logo.svg
   logo-active: /img/downloads/ubuntu-logo-active.svg
   defaultActive: active
