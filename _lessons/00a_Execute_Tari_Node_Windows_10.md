@@ -1,8 +1,8 @@
 ---
 layout: lesson
 title: How to run a Tari Node on Windows 10
-date: 2020-05-26 15:0045
-author: Richard Folorunso
+date: 2020-04-01 12:00
+author: Blue. Edited by Natasha Haripersad.
 thumbnail: learn-how-tari-works-2.png
 lead: Installing and running a Tari Node on Windows 10
 class: subpage
@@ -192,7 +192,7 @@ Make sure you save your config file before closing it if you made any changes to
 
 Inside of the ".tari-testnet" folder, there is a folder called "runtime". Inside of that folder, there is a batch file called "start_tari_basenode". Run it. You will soon be asked a question. "Logging configuration file does not exist. Would you like to create a new one (Y/n)?" Type Y and press enter.
 
-![Downloads Lesson Graphic](../assets/lessons/img/drunning-tari.png)
+![Downloads Lesson Graphic](../assets/lessons/img/running-tari.png)
 
 You are now connected to the Tari network! If you use the list-peers command you will see your connections to other nodes. Once your node is done syncing it will start mining. You can use the toggle-mining command to change this.
 
