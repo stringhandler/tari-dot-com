@@ -4,8 +4,8 @@
   title: Tari Base Node for Ubuntu
   subtitle: Download the binary, click through to install. Then you'll be
     automatically connected to the Tari blockchain.
-  download: binaries/tari_base_node-ubuntu-0.2.4.zip
-  checksum: 3dd2e9a53f77d4de040242962bd227dbf1e62aac9bb8402f65335dc503e36342
+  download: binaries/tari_base_node-ubuntu-0.2.5.zip
+  checksum: d5ea8db225d9759b8f36f3cdf06f23eda4267b2a42434dc40491df4cf3556bac
   version: Ubuntu 18.04 and higher
   source: https://github.com/tari-project/tari
   background-image: /assets/img/downloads/ubuntu.mp4
@@ -22,8 +22,8 @@
   title: Tari Base Node for Mac
   subtitle: Download the binary, click through to install. Then you'll be
     automatically connected to the Tari blockchain.
-  download: binaries/tari_base_node-osx-10.15-0.2.4.pkg
-  checksum: 190f630df85777f044e711a6c26eafbd4f94976c2c342401d34605d6ec787760
+  download: binaries/tari_base_node-osx-10.15-0.2.5.pkg
+  checksum: 104eb70a5b2567e03b52e1e14dbd4107c119388b263513dbcdef191d695aac7c
   version: MacOS 10.15.0 (Catalina) and higher
   source: https://github.com/tari-project/tari
   background-image: /assets/img/downloads/mac.mp4
