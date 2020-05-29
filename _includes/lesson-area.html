@@ -17,8 +17,7 @@
     </div>
 
     <div class="post-content {% if site.posts.size == 1 %}col-md-6{% endif %}">
-      <p class="post-date">{{ post.date | date: '%B %d, %Y' }}</p>
-      <h3 class="post-title mt-4"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h3>
+      <h3 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | strip_html }}</a></h3>
       <ul>
          {% for topic in post.topics %}
          <li>{{ topic }}</li>
