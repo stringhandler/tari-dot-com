@@ -13,6 +13,9 @@
 - title: When is the Tari token sale?
   id: faq-tari-token-sale
   text: Tari is not running any kind of public token sale. We’re not currently soliciting or accepting investment, and any opportunities to buy Tari tokens you may see online are scams.
+- title: Can I convert my testnet Tari (tXTR) to mainnet?
+  id: convert-txtr-to-mainnet
+  text: No. Testnet Tari has no value and will not be transferred or converted to mainnet.
 - title: Can I mine Tari?
   id: faq-can-i-mine-tari
   text: After the launch of the Tari genesis block, you will be able to opt into mining Tari by mining Monero.
