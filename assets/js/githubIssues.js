@@ -206,5 +206,5 @@ function daysBetween(date1String, date2String) {
   let d2 = new Date(date2String);
   return Math.round((d2 - d1) / (1000 * 3600 * 24));
 }
-
+renderIssues(Tari.githubIssuesPlaceholder);
 getIssuesData()

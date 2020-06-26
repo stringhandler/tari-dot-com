@@ -1,26 +1,24 @@
-(function() {
-    function getTelegramData() {
-        $.ajax({
-            url: Tari.telegramCachingURL,
-            headers: { "Access-Control-Allow-Origin": "*" },
-            success: function(res) {
-                const { online = "" } = res;
-                const telegramCountEl = document.getElementById("telegram-counter");
-                const mobileTelegramCountEl = document.getElementById("mobile-telegram-counter");
-                if (telegramCountEl) {
-                    telegramCountEl.innerText = online.trim() + " PEOPLE ONLINE";
-                    mobileTelegramCountEl.innerText = online.trim() + " PEOPLE ONLINE";
-                }
+function getTelegramData() {
+    $.ajax({
+        url: Tari.telegramCachingURL,
+        headers: { "Access-Control-Allow-Origin": "*" },
+        success: function(res) {
+            const { online = "" } = res;
+            const telegramCountEl = document.getElementById("telegram-counter");
+            const mobileTelegramCountEl = document.getElementById("mobile-telegram-counter");
+            if (telegramCountEl) {
+                telegramCountEl.innerText = online.trim() + " PEOPLE ONLINE";
+                mobileTelegramCountEl.innerText = online.trim() + " PEOPLE ONLINE";
             }
-        });
-    }
+        }
+    });
+}
+(function() {
+
     const site = window.location.origin;
     let updateHash = false;
     const homepage = window.location.href.split('/#')[0] === site || window.location.href.replace(/\/$/, "") === site;
 
-    if (homepage) {
-        renderIssues(Tari.githubIssuesPlaceholder);
-    }
     // Cache ajax requests by default
     jQuery.ajaxSetup({
         cache: true
