@@ -93,7 +93,7 @@
 
     * If either Alice or Bob go offline at any point in the above flow, or
     * if either run iOS and put the app in the background, or
-    * if there's a problem with the ToR client making a connection to the network, or
+    * if there's a problem with the Tor client making a connection to the network, or
     * the blockchain is congested and the transaction is not mined immediately, or
     * the blockchain is congested, the transaction is not mined immediately, and then it falls out of the mempool
     (the network forgets about it), or
