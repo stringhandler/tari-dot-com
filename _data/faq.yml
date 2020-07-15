@@ -84,7 +84,7 @@
     it and then attempts to broadcast the transaction to the blockchain network.
     1. Alice's wallet sends a courtesy message back to Bob to say that she's done this. Now both wallets update the
     transaction status to say  "Completing final processing".
-    1. One the transaction has been mined and is included in the blockchain, it can be marked as complete. Both
+    1. Once the transaction has been mined and is included in the blockchain, it can be marked as complete. Both
     wallets need to periodically ask a base node whether the transaction has been mined yet, in order to know
     whether that last step has happened.
 
