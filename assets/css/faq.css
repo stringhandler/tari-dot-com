@@ -30,7 +30,7 @@
 
 	
 
-	.faq-container p{
+	.faq-container p, ol, ul {
 		display: none;
 		margin-bottom: 0;
 		margin-top: 20px;

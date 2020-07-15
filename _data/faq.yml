@@ -55,4 +55,71 @@
 - title: What’s the story behind the Tari logo?
   id: faq-tari-logo
   text: The Tari logo was designed by Office, an iconic San Francisco branding firm. It features two main themes&#x3a; 1) a “T” for “Tari” centered within a gem, representing the type of digital gems or treasures which will be issued on the Tari blockchain and 2) the shape of a three-dimensional block with a chain wrapped around it (you may miss this one at first glance!), referencing the core technology upon which Tari is built.
+- title: Why is my transaction stuck "in progress?"
+  id: faq-pending-transactions
+  text: |
+    Sending a transaction from Aurora is simple and intuitive, but under the hood there's a lot going on. A _lot_.
 
+    To give you an idea of what happens between you clicking "send" and the transaction being confirmed on the
+    blockchain, have a look at [this article explaining how Tari transactions work](https://tlu.tarilabs
+    .com/protocols/mimblewimble-1/MainReport.html).
+
+    In case that's tl;dr, here's what happens every time Alice sends Tari to Bob. Remember that there _are no servers
+    or centralised parties_ that are able to co-ordinate these communications! Everything is done on the peer-to-peer
+    network.
+
+    1. Alice taps "send".
+    1. Alice's wallet selects which coins to spend, creates her change, and determines the network fee.
+    It then builds her half of the transaction. At this point, her wallet will display "Waiting for recipient to
+    come online".
+    1. Alice's wallet then needs to find Bob's wallet on the peer to peer network. It does this by
+       1. Checking to see if she already knows Bob,
+       1. If not, asks some of her peers if they know Bob.
+    1. Alice's wallet will then try and establish a connection to Bob directly.
+    1. If Bob responds, Alice sends over her half of the transaction.
+    1. Bob's wallet will check that the transaction looks legit, and then fill in his part of the transaction, sign
+    it, and then try and send it back to Alice. At this point, Bob's wallet will say "Waiting for sender to complete
+    transaction".
+    1. If Alice is still online and receives Bob's reply, she'll check that the transaction still checks out, signs
+    it and then attempts to broadcast the transaction to the blockchain network.
+    1. Alice's wallet sends a courtesy message back to Bob to say that she's done this. Now both wallets update the
+    transaction status to say  "Completing final processing".
+    1. Once the transaction has been mined and is included in the blockchain, it can be marked as complete. Both
+    wallets need to periodically ask a base node whether the transaction has been mined yet, in order to know
+    whether that last step has happened.
+
+    When this goes smoothly, the transaction negotiation completes in under a second, and then it takes roughly two
+    minutes to get confirmed. But there are at least a dozen points in that flow where things can be disrupted.
+
+    * If either Alice or Bob go offline at any point in the above flow, or
+    * if either run iOS and put the app in the background, or
+    * if there's a problem with the Tor client making a connection to the network, or
+    * the blockchain is congested and the transaction is not mined immediately, or
+    * the blockchain is congested, the transaction is not mined immediately, and then it falls out of the mempool
+    (the network forgets about it), or
+    * Alice tries a double spend, or
+    * The base node that the wallets are polling goes offline, or has stopped responding for some reason, or
+    * There's a bug in the wallet or base node code that is affecting the usual harmonious flow.
+
+    If any of these things happen, the process pauses until the issue resolves and the flow can continue. This is
+    where you'll notice that a transaction appears to be "stuck".
+
+    Luckily, the Tari devs have anticipated a lot of these issues and have put additional safeguards in place to try
+    and keep the flow moving as smoothly as possible.
+
+    For instance, if Bob is suddenly unreachable in steps 4 and 8, then Alice's wallet will ask some of Bob's peers
+    (Charlie and Dave) to keep the message for him, and deliver it when he appears again. Now, if Alice goes offline, at least Bob
+    will still get the message and the flow can limp forward.
+
+    The same thing happens when Bob tries to send messages back to Alice in Steps 5 and 6.
+
+    The Aurora wallet also has a small database of base nodes it uses to poll in Step 9, so if one of those nodes stops
+    responding, Aurora will try another one.
+
+    The wallets will also detect if the network has forgotten about the transaction for some reason and resubmit it.
+
+    All in all, in a system that has so many moving parts and requires careful choreography for things to go right,
+    _with no central party directing the steps_, it's fairly impressive that transactions get mined at all.
+
+    The Tari peer-to-peer network does a great job in building lots of robustness into the system, but from time to
+    time, things can and do go wrong.
