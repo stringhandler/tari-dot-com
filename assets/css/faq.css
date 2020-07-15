@@ -3,7 +3,7 @@
 	--*/
 
 	#faq{
-		
+
 		padding-bottom: 150px;
 	}
 
@@ -28,8 +28,9 @@
 
 	}
 
-	
 
+	.faq-container ol,
+	.faq-container ul,
 	.faq-container p {
 		display: none;
 		margin-bottom: 0;
