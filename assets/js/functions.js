@@ -201,9 +201,9 @@ function getTelegramData() {
 	         $(this).removeClass("faq-not-active");
 	         $(this).addClass("faq-active");
 	         $(this).find('.arrow').addClass("arrow-rotate");
-	         $(this).find("p").slideDown("swing");
+	         $(this).find("p, ul, ol").slideDown("swing");
 	     }else{
-	         $(this).find("p").slideUp("swing");
+	         $(this).find("p, ul, ol").slideUp("swing");
 	         $(this).removeClass("faq-active");
 	         $(this).find('.arrow').removeClass("arrow-rotate");
 	         $(this).addClass("faq-not-active");
