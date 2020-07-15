@@ -18,7 +18,7 @@ class: subpage
         <div class="faq-container faq-not-active">
           <img class="arrow" src="{{ site.baseurl }}/assets/img/arrow.svg">
           <h3 style="margin: 0px;" id={{ faq.id }}>{{ faq.title }}</h3>
-          <p>{{ faq.text }}</p>
+          <div>{{ faq.text | markdownify }}</div>
         </div>
         {% endfor %}
       </div>
