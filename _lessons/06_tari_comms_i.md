@@ -211,9 +211,9 @@ A much more robust framing scheme, that is used in the Tari messaging protocol, 
 each frame is delimited with a `n` byte integer that specifies how much data to read to make up a single message.
 
 ```text
----------------------------------------------------------------------------------------------------
-| len(msg1) |               msg1                | len(msg2) |               msg2                   |
-----------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------
+| len(msg1) |           msg1            | len(msg2) |           msg2             |
+----------------------------------------------------------------------------------
 ```
 
 ## Conclusion
