@@ -123,3 +123,38 @@
 
     The Tari peer-to-peer network does a great job in building lots of robustness into the system, but from time to
     time, things can and do go wrong.
+- title: What can I do if my transaction is stuck "in progress"?
+  id: faq-stuck-transactions
+  text: |
+    If your transaction has been stuck "in progress" for a long time, there are a few options available to you.
+
+    **As sender**
+
+    If you are the sender, and the status is "**Waiting for recipient to come online**", then you can choose to cancel
+    the transaction. It's possible that the recipient is never going to countersign the transaction, so you can free
+    up the funds locked up in this transaction and then try again at a later stage if you wish. The transaction has
+    never been broadcast to the network, there's no chance of this transaction ever completing and so your funds are
+    perfectly safe.
+
+    If the recipient hasn't replied within 3 days, then Aurora will cancel the transaction automatically.
+
+    Once the transaction says "**Completing final processing**", then the transaction is being broadcast to the Tari
+    network. It will usually be mined in about 2 minutes and become finalised, but if the network is congested, or
+    there is a sudden drop in hash rate, this can take much longer.
+
+    The wallet will periodically check to see whether it has been accepted into the mempool and then if it
+    has been mined. The wallet will rebroadcast the transaction if it has fallen out of the mempool without being
+    mined. At this stage, the transaction can no longer be cancelled.
+
+    **As recipient**
+
+    If you are the receiver, unfortunately there's nothing you can do except wait. Until the transaction is
+    finalised, you should **never treat the transaction as complete.** For example, if you're a merchant, you should
+    not consider payment complete until the status reflects this.
+
+    If the status does not change for three days, the wallet will discard the transaction and assume that the sender
+    will never broadcast it to the network. This is not a guarantee however, but since you're the recipient, there's
+    no real risk to you.
+
+    In principle, one could continue to scan the blockchain indefinitely looking for the output you created, but the
+    mobile developers decided not to implement this feature on Aurora to save on battery consumption.
