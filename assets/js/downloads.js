@@ -119,9 +119,10 @@ jQuery(document).ready(function($) {
           sha256 = checksum.split(" ")[0];
         }
 
-        btn.href = data[os].url;
-
-        checkSumDiv.innerHTML = checksum ? `SHA256: ${sha256}` : "";
+        if (btn && checkSumDiv) {
+          btn.href = data[os].url;
+          checkSumDiv.innerHTML = checksum ? `SHA256: ${sha256}` : "";
+        }
       }
     })
   }
