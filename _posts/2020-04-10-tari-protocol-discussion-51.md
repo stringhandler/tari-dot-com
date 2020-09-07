@@ -18,7 +18,7 @@ On Friday the Tari community discussed the meaning of digital asset ownership, w
 * What is the edge between digital asset and physical asset ownership?
 * People enjoy the concept of "portability" how one owns their asset independently of the game or world it was designed in, the asset lives on even if no one plays the game anymore.
 
-Please feel free to keep the conversation going by joining the discussion thread on [Telegram](https://t.me/tarilab) or #Tari on Freenode.
+Please feel free to keep the conversation going by joining the discussion thread on [Telegram](https://t.me/tariproject) or #Tari on Freenode.
 
 ### Transcript of Friday discussion
 Please note that unlike Telegram or IRC, Reddit threads are a living document. This is a snapshot taken 01:00:00 UTC

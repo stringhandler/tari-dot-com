@@ -17,7 +17,7 @@ On Thursday the Tari community discussed potential improvements or new features 
 *   Potential ways to approach one-sided transactions were discussed 
 *   Chat functionality that would allow people to send messages back and forth in app was well received by the community.
 
-Please feel free to keep the conversation going by joining the discussion thread on [Telegram](https://t.me/tarilab) or #Tari on Freenode.
+Please feel free to keep the conversation going by joining the discussion thread on [Telegram](https://t.me/tariproject) or #Tari on Freenode.
 
 
 
