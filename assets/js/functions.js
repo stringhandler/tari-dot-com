@@ -167,6 +167,8 @@ function getTelegramData() {
         $('.animsition').animsition({
             inClass: 'fade-in',
             outClass: 'fade-out',
+            timeout: true,
+            timeoutCountdown: 1000,
             inDuration: 1000,
             outDuration: 1000,
         });
