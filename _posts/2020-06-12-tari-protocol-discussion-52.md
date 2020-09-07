@@ -10,7 +10,7 @@ topics:
 - What does the proof-of-work algorithm for Tari mainnet look like?
 ---
 
-On Friday the Tari community discussed the Tari Proof of Work algorithm for mainnet on the Tari [Telegram](https://t.me/tarilab) (bridged to #Tari on Freenode).
+On Friday the Tari community discussed the Tari Proof of Work algorithm for mainnet on the Tari [Telegram](https://t.me/tariproject) (bridged to #Tari on Freenode).
 
 The primary question discussed was **“What does the proof-of-work algorithm for Tari mainnet look like?”**
 

@@ -18,7 +18,7 @@ On Friday the Tari community discussed potential use cases of the Tari blockchai
 * How will the protocol scale as there are more digital assets issued on Tari?
 * What is the transaction throughput of Tari?
 
-Please feel free to keep the conversation going by joining the Tari [Telegram](https://t.me/tarilab) or #Tari on Freenode.
+Please feel free to keep the conversation going by joining the Tari [Telegram](https://t.me/tariproject) or #Tari on Freenode.
 
 
 ### Transcript of Friday discussion
