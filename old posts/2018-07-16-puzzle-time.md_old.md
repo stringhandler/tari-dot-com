@@ -341,7 +341,7 @@ about how private and public keys work in cryptocurrencies.
 For those that missed out, all the puzzle pages are still there, so go and check them out. 
 
 We're already working on the next puzzle, which will be even more fun, and something completely different, so join
-our [telegram group](https://t.me/tarilab) to catch any announcements.
+our [telegram group](https://t.me/tariproject) to catch any announcements.
 
 We're hiring! If you're feeling FOMO and want to be part of the fun at Tari, check out our [available openings](https://www.tari.com/contribute/)
 
