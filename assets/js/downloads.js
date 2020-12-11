@@ -44,21 +44,22 @@ jQuery(document).ready(function ($) {
       url: Tari.s3BucketURL,
       headers: { "Access-Control-Allow-Origin": "*" },
       success: function (res) {
-        groupDataByOs(res.current);
-        setLatest(res.latest);
+        groupDataByOs(res);
+        setLatest(res);
       },
     });
   }
 
   function groupDataByOs(data) {
-    renderBinaries(data.linux, "linux");
-    renderBinaries(data.windows, "windows");
-    renderBinaries(data.osx, "osx");
-    renderBinaries(data.libwallet, "libwallet");
+    renderBinaries(data["current/linux"], "linux");
+    renderBinaries(data["current/windows"], "windows");
+    renderBinaries(data["current/osx"], "osx");
+    renderBinaries(data["current/libwallet"], "libWallet");
   }
 
   function renderBinaries(data, os) {
-    let binContainer = document.getElementById(`${os}BinID`);
+    let rawOs = os.replace("current/", "");
+    let binContainer = document.getElementById(`${rawOs}BinID`);
     const dateOptions = { weekday: "long", month: "short", day: "numeric" };
 
     binContainer.innerHTML = data
@@ -83,9 +84,13 @@ jQuery(document).ready(function ($) {
 
   function setLatest(data) {
     Object.keys(data).forEach((os) => {
-      if (os !== "libwallet") {
-        let btn = document.getElementById(`${os}DL`);
-        let checkSumDiv = document.getElementById(`${os}CSID`);
+      let rawOs = os.replace("latest/", "");
+      if (rawOs === os) {
+        return;
+      }
+      if (rawOs !== "libwallet") {
+        let btn = document.getElementById(`${rawOs}DL`);
+        let checkSumDiv = document.getElementById(`${rawOs}CSID`);
 
         let sha256 = "";
         let checksum = data[os][0].sha256;
