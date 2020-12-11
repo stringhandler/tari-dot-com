@@ -51,15 +51,10 @@ jQuery(document).ready(function ($) {
   }
 
   function groupDataByOs(data) {
-    let linux = data.linux;
-    let windows = data.windows;
-    let osx = data.osx;
-    let libWallet = data.libWallet;
-    let sortedFiles = { linux, windows, osx, libWallet };
-
-    Object.keys(sortedFiles).forEach((os) => {
-      renderBinaries(sortedFiles[os], os);
-    });
+    renderBinaries(sortedFiles[data.linux], data.linux);
+    renderBinaries(sortedFiles[data.windows], data.windows);
+    renderBinaries(sortedFiles[data.osx], data.osx);
+    renderBinaries(sortedFiles[data.libwallet], data.libwallet);
   }
 
   function renderBinaries(data, os) {
