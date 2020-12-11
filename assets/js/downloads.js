@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
     renderBinaries(data["current/linux"], "linux");
     renderBinaries(data["current/windows"], "windows");
     renderBinaries(data["current/osx"], "osx");
-    renderBinaries(data["current/libwallet"], "libwallet");
+    renderBinaries(data["current/libwallet"], "libWallet");
   }
 
   function renderBinaries(data, os) {
