@@ -44,17 +44,17 @@ jQuery(document).ready(function ($) {
       url: Tari.s3BucketURL,
       headers: { "Access-Control-Allow-Origin": "*" },
       success: function (res) {
-        groupDataByOs(res.files);
+        groupDataByOs(res.current);
         setLatest(res.latest);
       },
     });
   }
 
   function groupDataByOs(data) {
-    renderBinaries(sortedFiles[data.linux], data.linux);
-    renderBinaries(sortedFiles[data.windows], data.windows);
-    renderBinaries(sortedFiles[data.osx], data.osx);
-    renderBinaries(sortedFiles[data.libwallet], data.libwallet);
+    renderBinaries(data.linux, "linux");
+    renderBinaries(data.windows, "windows");
+    renderBinaries(data.osx, "osx");
+    renderBinaries(data.libwallet, "libwallet");
   }
 
   function renderBinaries(data, os) {
@@ -88,14 +88,14 @@ jQuery(document).ready(function ($) {
         let checkSumDiv = document.getElementById(`${os}CSID`);
 
         let sha256 = "";
-        let checksum = data[os].sha256;
+        let checksum = data[os][0].sha256;
 
         if (checksum) {
           sha256 = checksum.split(" ")[0];
         }
 
         if (btn && checkSumDiv) {
-          btn.href = data[os].url;
+          btn.href = data[os][0].url;
           checkSumDiv.innerHTML = checksum ? `SHA256: ${sha256}` : "";
         }
       }
