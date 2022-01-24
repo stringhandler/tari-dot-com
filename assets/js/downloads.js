@@ -63,6 +63,8 @@ jQuery(document).ready(function ($) {
     const dateOptions = { weekday: "long", month: "short", day: "numeric" };
 
     binContainer.innerHTML = data
+      // The url comparison is to sort the zip/sha256 files.
+      .sort((a, b) => a.lastModified > b.lastModified || (a.lastModified == b.lastModified && a.url < b.url) ? -1 : 1)
       .map((binary, index) => {
         const lastMod = new Date(binary.lastModified);
         const formattedDate = lastMod.toLocaleString(undefined, dateOptions);
@@ -93,14 +95,16 @@ jQuery(document).ready(function ($) {
         let checkSumDiv = document.getElementById(`${rawOs}CSID`);
 
         let sha256 = "";
-        let checksum = data[os][0].sha256;
+        // The url comparison is to sort the zip/sha256 files.
+        let latest = data[os].reduce((a, b) => a.lastModified > b.lastModified || (a.lastModified == b.lastModified && a.url < b.url) ? a : b)
+        let checksum = latest.sha256;
 
         if (checksum) {
           sha256 = checksum.split(" ")[0];
         }
 
         if (btn && checkSumDiv) {
-          btn.href = data[os][0].url;
+          btn.href = latest.url;
           checkSumDiv.innerHTML = checksum ? `SHA256: ${sha256}` : "";
         }
       }
