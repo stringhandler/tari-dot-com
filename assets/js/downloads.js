@@ -86,7 +86,7 @@ jQuery(document).ready(function ($) {
 
   function setLatest(data) {
     Object.keys(data).forEach((os) => {
-      let rawOs = os.replace("latest/", "");
+      let rawOs = os.replace("current/", "");
       if (rawOs === os) {
         return;
       }
