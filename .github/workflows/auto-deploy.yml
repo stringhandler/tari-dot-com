@@ -26,6 +26,7 @@ jobs:
           folder: "_site"
           bucket: ${{ secrets.S3_BUCKET }}
           bucket-region: ${{ secrets.S3_REGION }}
+          invalidation: "/*"
           dist-id: ${{ secrets.CDN_ID }}
           delete-removed: true
           private: false
