@@ -163,7 +163,7 @@ lottie-player {
 .iframe-container {
   position: relative;
   width: 100%;
-  padding-bottom: 56.25%; 
+  padding-bottom: 56.25%;
   height: 0;
   margin-bottom: 50px;
 }
@@ -541,6 +541,11 @@ lottie-player {
 #viewport #mobileSocial ul li a[href*="github"] {
   background-image: url("../img/social-github.svg");
   width: 2.5rem;
+}
+#viewport #social ul li a[href*="discord"],
+#viewport #mobileSocial ul li a[href*="discord"] {
+  background-image: url("../img/social-discord.svg");
+  width: 3.1rem;
 }
 #viewport #social ul li a[href*="reddit"],
 #viewport #mobileSocial ul li a[href*="reddit"] {
