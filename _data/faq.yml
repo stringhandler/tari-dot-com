@@ -7,9 +7,6 @@
 - title: How will this help the businesses issuing digital assets?
   id: faq-businesses-issuing-assets
   text: Creators of digital assets will be able to issue them as programmable non-fungible tokens on the Tari blockchain and trust that their rules will be enforced. Rules may be economic in nature (e.g. X% fee every time a given asset is transferred), time-based (e.g. A given asset can only be transferred X days after receipt) or something else entirely. Our goal is to architect Tari in a manner that gives asset issuers meaningful flexibility with the rulesets they create for their digital assets.
-- title: Who are the co-founders of Tari?
-  id: faq-co-founders
-  text: The co-founders of Tari are Naveen Jain, Riccardo “fluffypony” Spagni, and Dan Teree.
 - title: When is the Tari token sale?
   id: faq-tari-token-sale
   text: Tari is not running any kind of public token sale. We’re not currently soliciting or accepting investment, and any opportunities to buy Tari tokens you may see online are scams.
@@ -40,9 +37,10 @@
 - title: What are specific use cases for the Tari protocol?
   id: faq-specific-use-cases
   text: The Tari protocol is being built for a specific use&#x3a; to facilitate the issuance, management and transfer of digital assets. Digital assets include&#x3a; tickets, loyalty points, in-game items, and crypto-native assets like CryptoKitties.
-- title: Who are the investors behind Tari?
-  id: faq-who-are-investors
-  text: The Tari Labs organization is very honored to be supported by Redpoint, Trinity Ventures, Canaan Partners, Blockchain Capital, Pantera, Slow Ventures, Aspect Ventures, Vy Capital, Bee Partners, Sora Ventures, Macro Ventures, Draft Ventures, Base Ventures, and more. Thank you to everyone who is supporting us on this journey.
+- title: Who are the participants in the Tari Network?
+  id: faq-who-are-participants
+  text: |
+    The Tari Labs organization is very honored to have support from the following network participants: Redpoint, Trinity Ventures, Canaan Partners, Blockchain Capital, Pantera, Slow Ventures, Aspect Ventures, Vy Capital, Bee Partners, Sora Ventures, Macro Ventures, Draft Ventures, Base Ventures, and more.
 - title: How are you going to make Tari scalable?
   id: faq-tari-scalable
   text: We plan on making Tari scalable by utilizing technologies like payment channels and transaction cut-through.
