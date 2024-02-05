@@ -19,8 +19,7 @@
   defaultActive: active
   ctaText: Download for Ubuntu
   filter_spec: ubuntu
-  archOptions:
-    [{ value: x86_64, label: x86_64 }, { value: arm64, label: arm64 }]
+  archOptions: [{ value: x86_64, label: x86_64 }]
   networkOptions: [{ value: nextnet, label: Nextnet }]
 - type: Mac
   elementID: mac
@@ -43,7 +42,7 @@
   ctaText: Download for Mac
   filter_spec: osx-10.15
   archOptions:
-    [{ value: x86_64, label: x86_64 }, { value: arm64, label: arm64 }]
+    [{ value: arm64, label: arm64 }, { value: x86_64, label: x86_64 }]
   networkOptions: [{ value: nextnet, label: Nextnet }]
 - type: Windows
   elementID: windows
