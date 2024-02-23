@@ -129,7 +129,7 @@ All of the information above, but in moving picture format!
 
 <div align="center">
   <iframe width="800" height="600"  src="https://www.youtube.com/embed/Z_43z5Gx3v4" 
-    title="Receiving Minotari" 
+    title="Launchpad Mining guide" 
     allow="autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" 
   allowfullscreen>
   </iframe>
