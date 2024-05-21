@@ -1,6 +1,6 @@
 - title: What is Tari?
   id: faq-what-is-tari
-  text: Tari is a new open source, digital assets focused blockchain protocol that is being architected as a merge-mined sidechain with Monero. We chose to focus specifically on digital assets – things like tickets, loyalty points, in-game items, and crypto-native assets like CryptoKitties – because we see a huge opportunity to revolutionize the way these assets are owned, managed and transferred.
+  text: Tari is a highly versatile layer 1 blockchain protocol built in Rust. It is ultra-high performance, infinitely scalable, open source, and has an ingenious native app distribution platform that puts all of its power in your hands.
 - title: What is a Digital Asset?
   id: faq-what-is-digital-asset
   text: A digital asset is one that consumers can purchase or earn the right to use, but which exists entirely in digital form. Digital assets include event tickets, in-game items, loyalty points, and cryptonative assets.
